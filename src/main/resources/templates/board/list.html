@@ -49,7 +49,7 @@
         <tbody>
         <tr th:each="board : ${boards}">
             <th th:text="${board.id}">1</th>
-            <td><a th:text="${board.title}" th:href="@{/board/form(id=${board.id})}"></a> Mark</td>
+            <td><a th:text="${board.title}" th:href="@{/board/form(id=${board.id})}"></a>
             <td th:text="${board.content}">Otto</td>
             <td>@mdo</td>
         </tr>
