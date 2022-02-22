@@ -1,6 +1,9 @@
 package com.tymeleaf.tymeleaf;
 
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 public class testJava {
@@ -21,6 +24,23 @@ public class testJava {
         boolean result2 = checkMobile(str2);
         System.out.println("result2 = " + result2);
 
+
+//        for(int i = 0; i < 5; i++){
+//            List<String> rList = new ArrayList<>();
+//            rList.add("1");
+//            rList.add("2");
+//            System.out.println("rList = " + rList);
+//            rList = null;
+//        }
+
+
+        Integer i = 1000;
+        Integer k = 1000;
+        if(!(Objects.equals(i, k))){
+            System.out.println("다름");
+        }else{
+            System.out.println("같음");
+        }
 
     }
 }
